@@ -164,7 +164,7 @@ let poseNet;let poseNet2;
 let poses2=[];
 let speech;
 let isPartProper=[];
-let epsilon=0.03;
+let epsilon=0.035;
 let pose;
 color_code = {
     'nose': [0,0,0],
@@ -441,11 +441,11 @@ function modelLoaded()
   
                   if(abs(result[i][2]) > abs(result[i][3])){
                       if(result[i][2]>0){
-                          temp="Move your "+result[i][1]+" to the right";
+                          temp="Move your "+result[i][1]+" to the left";
                           
                       }
                       else{
-                          temp="Move your "+result[i][1]+" to the left";
+                          temp="Move your "+result[i][1]+" to the right";
                           
                       }
                   }
